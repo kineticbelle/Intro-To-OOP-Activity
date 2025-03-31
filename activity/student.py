@@ -18,8 +18,10 @@ class Student:
             This function has 1 paramenter. It helps us access all attributes(i.e. num_classes) 
             in the constructor. It should return the value of self.num_classes
         '''
+        return self.num_classes
     def summary(self):
         '''
             This function has 1 paramenter. It helps us access all attributes(i.e. name, class_year) 
             in the constructor. It should return a string => example f"Samara is a junior enrolled in 7 classes"
         '''
+        return f"{self.name} is a {self.class_year} enrolled in {self.num_classes} classes"
