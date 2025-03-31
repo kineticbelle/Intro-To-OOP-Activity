@@ -6,19 +6,19 @@ class Student:
         self.classes = classes
         self.num_classes = len(classes)
 
-    def add_class(self, class):
+    def add_class(self, class_name):
         '''
             This function has 2 paramenters. The first argument helps
             us access all attributes(i.e. name, classes) in the constructor.
             It should append the second argument to the self.classes list
         '''
-        self.append(class) # self.method(object to add to classes list)
+        self.classes.append(class_name)
     def get_num_classes(self):
         '''
             This function has 1 paramenter. It helps us access all attributes(i.e. num_classes) 
             in the constructor. It should return the value of self.num_classes
         '''
-        return self.num_classes
+        return self.num_classes 
     def summary(self):
         '''
             This function has 1 paramenter. It helps us access all attributes(i.e. name, class_year) 
